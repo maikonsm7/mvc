@@ -33,7 +33,7 @@ app.get('/sobre', (req, res)=>{
 app.use('/tasks', tasksRoutes)
 
 conn
-.sync({force: true})
+.sync()
 .then(()=>{
     app.listen(port, ()=>{
         console.log(`Servidor online! http://localhost:${port}`)

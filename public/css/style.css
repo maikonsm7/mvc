@@ -13,21 +13,21 @@ nav {
     background-color: #202020;
     padding: 1.2em;
 }
-ul {
+nav ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
 }
-li {
+nav ul li {
     display: inline;
     margin-right: 10px;
 }
-a {
+nav ul li a {
     color: white;
     font-weight: bold;
     text-decoration: none;
 }
-a:hover {
+nav ul li a:hover {
     color: rgb(153, 153, 153);
 }
 .form{
@@ -46,6 +46,67 @@ a:hover {
 .form-control input{
     padding: 5px;
     margin-top: 3px;
+}
+input[type="submit"]{
+    background-color: #007BFF;
+    color: #FFF;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    opacity: .7;
+    font-size: 1em;
+    border: none;
+    cursor: pointer;
+}
+input[type="submit"]:hover{
+    opacity: 1;
+}
+.task-list{
+    list-style: none;
+    margin-top: 1em;
+    margin: 0;
+    padding: 0;
+}
+.task-list li{
+    padding: .5em;
+    margin-bottom: 1em;
+    border-bottom: 1px solid rgb(187, 187, 187);
+    display: flex;
+    justify-content: space-between;
+}
+.task-list li a{
+    text-decoration: none;
+}
+.task-list .title{
+    font-weight: bold;
+    color: #db4c3f;
+    transition: .5s;
+    font-size: 1.2em;
+}
+.task-list .title:hover{
+    color: #333;
+}
+.title.done{
+    text-decoration: line-through;
+    color: #CCC;
+}
+.actions{
+    display: flex;
+}
+.actions i{
+    font-size: 1.2em;
+    margin-left: .8em;
+    color: gray;
+}
+.actions i:hover{
+    color: #db4c3f;
+}
+.actions form button{
+    text-decoration: none;
+    border: none;
+    background: none;
+    outline: none;
+    font: inherit;
 }
 footer{
     width: 100%;
