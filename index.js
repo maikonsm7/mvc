@@ -25,7 +25,6 @@ app.get('/', (req, res)=>{
     res.render('home')
 })
 
-
 app.get('/sobre', (req, res)=>{
     res.render('sobre')
     })
